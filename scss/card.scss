@@ -1,0 +1,56 @@
+@use 'reset';
+$Outfit: 'Outfit', sans-serif;
+$White: hsl(0, 0%, 100%);
+$Light-gray: hsl(212, 45%, 89%);
+$Grayish-blue: hsl(220, 15%, 55%);
+$Dark-blue: hsl(218, 44%, 22%);
+
+body{
+    font-size: 100%;
+    list-style-type: none;
+    width: 100vw;
+    height: 100vh;
+    font-family: $Outfit;
+    background-color: $Light-gray;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+
+    div.card{
+        text-align: center;
+        background-color: $White;
+        width: 15rem;
+        border-radius: 20px;
+        padding: .9rem;
+        margin: auto;
+
+        img{
+            width: 100%;
+            border-radius: 7px;  
+        }
+
+        h1.card__title{
+            font-size: 1.1rem;
+            font-weight: 700;
+            margin: 1rem .2rem;            
+            color: $Dark-blue;            
+        }
+
+        p.card__description{
+            font-weight: 400;
+            font-size: 15px;
+            color: $Grayish-blue;
+            margin: 0 0 1rem;
+        }
+    }
+
+    div.attribution{
+        text-align: center;
+        position: absolute;
+        bottom: 1rem;
+        margin: auto;        
+        font-family: $Outfit;
+    }
+}
