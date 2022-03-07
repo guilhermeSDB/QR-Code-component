@@ -75,14 +75,17 @@ body div.card img {
 body div.card h1.card__title {
   font-size: 1.1rem;
   font-weight: 700;
-  margin: 1rem 0.2rem;
+  margin: 1rem 0;
   color: #1f3251;
 }
 body div.card p.card__description {
   font-weight: 400;
   font-size: 15px;
   color: #7b879d;
-  margin: 0 0 1rem;
+  margin: 0 0 1.5rem;
+}
+body div.card h1.card__title, body div.card p {
+  margin: 1.3rem 0.3555rem;
 }
 body div.attribution {
   text-align: center;
